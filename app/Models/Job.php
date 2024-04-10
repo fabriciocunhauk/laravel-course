@@ -2,7 +2,7 @@
 
 namespace App\Models;
 
-// Imports 
+// Imports
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;

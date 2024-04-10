@@ -5,7 +5,7 @@
 
     <form method="POST" action="/jobs/{{ $job->id }}">
         @csrf
-        @method("PATCH")
+        @method('PATCH')
 
         <div class="space-y-12">
             <div class="border-b border-gray-900/10 pb-12">
@@ -21,7 +21,7 @@
                             </div>
                         </div>
                         @error('title')
-                        <p class="mt-2 text-red-500 italic">{{ $message }}</p>
+                            <p class="mt-2 text-red-500 italic">{{ $message }}</p>
                         @enderror
                     </div>
 
@@ -35,7 +35,7 @@
                                     placeholder="$50.000 Per Year" required>
                             </div>
                             @error('salary')
-                            <p class="mt-2 text-red-500 italic">{{ $message }}</p>
+                                <p class="mt-2 text-red-500 italic">{{ $message }}</p>
                             @enderror
                         </div>
 

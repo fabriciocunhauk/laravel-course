@@ -22,7 +22,7 @@
                             </div>
                         </div>
                         @error('title')
-                              <p class="mt-2 text-red-500 italic">{{ $message }}</p>
+                            <p class="mt-2 text-red-500 italic">{{ $message }}</p>
                         @enderror
                     </div>
 
@@ -36,13 +36,13 @@
                                     placeholder="$50.000 Per Year" required>
                             </div>
                             @error('salary')
-                              <p class="mt-2 text-red-500 italic">{{ $message }}</p>
+                                <p class="mt-2 text-red-500 italic">{{ $message }}</p>
                             @enderror
                         </div>
 
                         {{-- <ul class="mt-5 text-red-500 italic">
-                          @if($errors->any())
-                            @foreach($errors->all() as $error)
+                          @if ($errors->any())
+                            @foreach ($errors->all() as $error)
                               <li>{{ $error }}</li>
                             @endforeach
                           @endif
