@@ -8,22 +8,22 @@
         <div class="space-y-12">
             <div class="border-b border-gray-900/10 pb-12">
                 <div class="grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
-                    <div class="sm:col-span-4">
+                    <x-form-field class="sm:col-span-4">
                         <x-form-label for="email">Email</x-form-label>
                         <div class="mt-2">
-                            <x-form-input type="text" name="email" id="email" required />
+                            <x-form-input type="email" name="email" id="email" required />
                         </div>
                         <x-form-error name="email" />
-                    </div>
+                    </x-form-field>
 
                     <div class="sm:col-span-4">
-                        <div class="mt-2">
+                        <x-form-field class="mt-2">
                             <x-form-label for="password">Password</x-form-label>
                             <div class="mt-2">
                                 <x-form-input type="password" name="password" id="password" required />
                             </div>
                             <x-form-error name="password" />
-                        </div>
+                        </x-form-field>
                     </div>
                 </div>
             </div>

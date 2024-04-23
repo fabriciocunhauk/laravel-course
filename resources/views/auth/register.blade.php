@@ -27,34 +27,34 @@
                     </div>
 
                     <div class="sm:col-span-4">
-                        <div class="mt-2">
+                        <x-form-field class="mt-2">
                             <x-form-label for="email">Email</x-form-label>
                             <div class="mt-2">
-                                <x-form-input type="text" name="email" id="email" required />
+                                <x-form-input type="email" name="email" id="email" required />
                             </div>
                             <x-form-error name="email" />
-                        </div>
+                        </x-form-field>
                     </div>
 
                     <div class="sm:col-span-4">
-                        <div class="mt-2">
+                        <x-form-field class="mt-2">
                             <x-form-label for="password">Password</x-form-label>
                             <div class="mt-2">
                                 <x-form-input type="password" name="password" id="password" required />
                             </div>
                             <x-form-error name="password" />
-                        </div>
+                        </x-form-field>
                     </div>
 
                     <div class="sm:col-span-4">
-                        <div class="mt-2">
+                        <x-form-field class="mt-2">
                             <x-form-label for="password_confirmation">Confirm Password</x-form-label>
                             <div class="mt-2">
                                 <x-form-input type="password_confirmation" name="password_confirmation"
                                     id="password_confirmation" required />
                             </div>
                             <x-form-error name="password_confirmation" />
-                        </div>
+                        </x-form-field>
                     </div>
                 </div>
             </div>
